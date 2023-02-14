@@ -2,6 +2,8 @@
 
 A chrome extension that adds Hacker News from a story to the [Omnivore](https://omnivore.app) read it later app.
 
+# Demo
+![Demo](docs/demo.jpg)
 ## Installation
 
 1. `git clone
