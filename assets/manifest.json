@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Hacker News Comments",
+  "version": "1.0",
+  "permissions": [ "activeTab", "cookies", "notifications", "webNavigation"],
+  "background": {"service_worker": "background.js"},
+  "action": {
+    "default_icon": "images/icon.png"
+  },
+  "host_permissions": [
+    "https://api-prod.omnivore.app/*",
+    "https://omnivore.app/"
+  ]
+}

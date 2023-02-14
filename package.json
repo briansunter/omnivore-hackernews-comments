@@ -1,0 +1,32 @@
+{
+  "name": "omnivore-hn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tsc --noEmit && eslint .",
+    "build": "node esbuild.config.js",
+    "build:prod": "npm run lint && node esbuild.config.js",
+    "dev": "node esbuild.config.dev.js",
+    "prettier:check": "prettier --check src",
+    "prettier:fix": "prettier --write src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.212",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "esbuild-plugin-copy": "^2.0.2",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "esbuild": "0.17.7",
+    "graphql-request": "^5.1.0"
+  },
+  "type": "module"
+}
